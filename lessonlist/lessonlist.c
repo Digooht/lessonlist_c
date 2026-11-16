@@ -7,12 +7,10 @@ int prime(int m);
 
 int main()
 {
+
 	while (prime(m))
 	{
-		print("%6d",m);
 		print("%d", i);
-		i++;
-
 	}
 	return 0;
 }
