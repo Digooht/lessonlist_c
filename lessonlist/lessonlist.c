@@ -1,28 +1,33 @@
 ﻿#define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 
-int main() {
-	int n;
-	scanf("%d", &n);
-	switch(n) 
+int i,m;
+
+int prime(int m);
+
+int main()
+{
+	while (prime(m))
 	{
-		case 1:
-			printf("《C语言程序设计》");
-			break;
-		case 2:
-			printf("没课");
-			break;
-		case 3:
-			printf("《数据结构》");
-			break;
-		case 4:
-			printf("没课");
-			break;
-		case 5:
-			printf("《python语言程序设计》");
-			break;
-		default:
-			printf("输入数字需要在1~5之间"); 
+		print("%6d",m);
+		print("%d", i);
+		i++;
+
 	}
 	return 0;
+}
+
+int prime(int m)
+{
+	for (i = 2;i <= m - 1;i++)
+	{
+		if (m% i == 0)
+		{
+			return 0;
+		}
+		else
+		{
+			return 1;
+		}
+	}
 }
